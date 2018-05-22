@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.google.mlkitcustomdemo.mlkitcustom.MainActivity">
+
+  <TextView
+      android:id="@+id/textview"
+      android:layout_width="387dp"
+      android:layout_height="0dp"
+      android:layout_marginTop="225dp"
+      android:layout_marginBottom="94dp"
+      android:gravity="center"
+      android:text="Model Output"
+      android:textSize="20sp"
+      app:layout_constraintBottom_toTopOf="@+id/editText"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.41"/>
+  <Button
+      android:id="@+id/button"
+      android:layout_width="322dp"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="44dp"
+      android:text="Run Model"
+      android:textSize="20sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintHorizontal_bias="0.494"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"/>
+  <EditText
+      android:id="@+id/editText"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="185dp"
+      android:ems="10"
+      android:hint="Input number to model"
+      android:inputType="number|numberDecimal"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textview"
+      />
+
+</android.support.constraint.ConstraintLayout>
