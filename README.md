@@ -56,7 +56,7 @@ First clone the flatbuffers repo and build flatc.
     git clone https://github.com/google/flatbuffers.git
    
 Then you have to have the tensorflow schema.fbs stored locally. Either checkout the tensorflow github or download
-that [one file[(https://github.com/tensorflow/tensorflow/blob/18003982ff9c809ab8e9b76dd4c9b9ebc795f4b8/tensorflow/contrib/lite/schema/schema.fbs). 
+that [one file](https://github.com/tensorflow/tensorflow/blob/18003982ff9c809ab8e9b76dd4c9b9ebc795f4b8/tensorflow/contrib/lite/schema/schema.fbs). 
 Then you can run *flatc* to generate the json file from then input tflite model.
     
     flatc -t schema.fbs -- input_model.tflite
