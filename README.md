@@ -41,8 +41,8 @@ You can also convert the frozen graphdef .pb to text readable .pbtxt as follows.
     path_to_pb = '...'
     output_file = '...'
     g = tf.GraphDef()
-    with open(path_to_pb, 'r') as f:
-      g.ParseFromString(str(f.read()))
+    with open(path_to_pb, 'rb') as f:
+      g.ParseFromString(f.read())
     with open(output_file, 'w') as f:
       f.write(str(g))
   
